@@ -20,7 +20,7 @@ To get the frontend running locally:
 
 A live API server is running at https://agile-island-00923.herokuapp.com/movies
  
-Alternatively, you can add `.env.local` file in the root folder of project to set environment variables (use REACT_APP_API_URL to change webserver's URL). This file will be ignored by git, so it is suitable for API keys and other sensitive stuff. Refer to [dotenv](https://github.com/motdotla/dotenv) and [React](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-development-environment-variables-in-env) documentation for more details. 
+Alternatively, you can add `.env.local` file in the root folder of project to set environment variables (use API_URL to change webserver's URL). This file will be ignored by git, so it is suitable for API keys and other sensitive stuff. Refer to [dotenv](https://github.com/motdotla/dotenv) and [React](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-development-environment-variables-in-env) documentation for more details. 
 
 ### Making requests to the backend API
 
