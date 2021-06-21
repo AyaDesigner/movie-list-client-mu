@@ -4,7 +4,7 @@ import axios from 'axios';
 export const loadMoviesAction = () => {
     return dispatch => {
         return axios
-            .get('http://localhost:8000/movies')
+            .get('https://agile-island-00923.herokuapp.com/movies')
             .then((response) => {
                 dispatch({
                     type: 'LOAD_MOVIES',
@@ -20,7 +20,7 @@ export const loadMoviesAction = () => {
 export const searchMoviesAction = (searchKeyword) => {
     return dispatch => {
         return axios
-            .get(`http://localhost:8000/search?searchKeyword=${searchKeyword}`)
+            .get(`https://agile-island-00923.herokuapp.com/search?searchKeyword=${searchKeyword}`)
             .then((response) => {
                 dispatch({
                     type: 'LOAD_MOVIES',
