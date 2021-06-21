@@ -1,10 +1,11 @@
 import axios from 'axios';
+const API_URL = process.env.REACT_APP_API_URL || 'https://agile-island-00923.herokuapp.com/movies';
 
 
 export const loadMoviesAction = () => {
     return dispatch => {
         return axios
-            .get('https://agile-island-00923.herokuapp.com/movies')
+            .get(API_URL)
             .then((response) => {
                 dispatch({
                     type: 'LOAD_MOVIES',
@@ -20,7 +21,7 @@ export const loadMoviesAction = () => {
 export const searchMoviesAction = (searchKeyword) => {
     return dispatch => {
         return axios
-            .get(`https://agile-island-00923.herokuapp.com/search?searchKeyword=${searchKeyword}`)
+            .get(`${API_URL}search?searchKeyword=${searchKeyword}`)
             .then((response) => {
                 dispatch({
                     type: 'LOAD_MOVIES',
