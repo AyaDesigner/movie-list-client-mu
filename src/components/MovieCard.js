@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 
 
 
-export default function MoviesList({ movie }) {
+export default function MovieCard({ movie }) {
 
     return (
         <Card style={{ flex: 1, width: '20rem', height: '100%', color: '#282c34', padding: '1rem', margin: '1rem' }}>
