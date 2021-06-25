@@ -52,7 +52,7 @@ src
 
 ### Coming next (a.k.a with more time available)
 
-* Add a unit test (only MovieCard test has been created) for each component, action and reducer
+* Add a unit test (only [MovieCard](https://github.com/AyaDesigner/movie-list-client-mu/blob/main/src/components/MovieCard.test.js) test has been created) for each component, action and reducer
 * Change the input search componenet by removing the button and run the search after at least 3 digits are entered
 * Add proper CSS style to the MovieCard component (remove white space)
 * Add more... link in the plots longer than X characters
